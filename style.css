@@ -5,8 +5,13 @@ html {
 }
 
 hr {
-  border: 1px solid red;
+    border: none; /* Remove default border */
+    height: 1px; /* Set the height of the horizontal line */
+    background-color: red; /* Set the color of the horizontal line */
+    width: 100%; /* Optional: Set the width of the horizontal line */
+    margin: 20px 0; /* Optional: Adjust margin as needed */
 }
+
 body {
     display: flex;
     flex-direction: column;
