@@ -1,6 +1,7 @@
 html {
-  color: #f0000;
+  color: red;
   background-color: black;
+  text-align: center;
 }
 
 hr {
