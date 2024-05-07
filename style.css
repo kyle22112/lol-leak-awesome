@@ -8,7 +8,7 @@ hr {
     border: none; /* Remove default border */
     height: 1px; /* Set the height of the horizontal line */
     background-color: red; /* Set the color of the horizontal line */
-    width: 100%; /* Optional: Set the width of the horizontal line */
+    width: 200%; /* Optional: Set the width of the horizontal line */
     margin: 20px 0; /* Optional: Adjust margin as needed */
 }
 
