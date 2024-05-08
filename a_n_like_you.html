@@ -12,37 +12,5 @@
       <source src="a_n_like_you.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
-
-    <button onclick="togglePlayPause()">Play/Pause</button>
-    <div id="timer">0:00</div>
-
-    <script>
-      var audio = document.getElementById("myAudio");
-      var isPlaying = false;
-      var timerElement = document.getElementById("timer");
-
-      function togglePlayPause() {
-        if (isPlaying) {
-          audio.pause();
-        } else {
-          audio.play();
-        }
-        isPlaying = !isPlaying;
-      }
-
-      audio.addEventListener("timeupdate", function() {
-        var currentTime = audio.currentTime;
-        var duration = audio.duration;
-        var remainingTime = duration - currentTime;
-        timerElement.innerHTML = formatTime(remainingTime);
-      });
-
-      function formatTime(seconds) {
-        var minutes = Math.floor(seconds / 60);
-        var remainingSeconds = Math.floor(seconds % 60);
-        return minutes + ":" + (remainingSeconds < 10 ? "0" : "") + remainingSeconds;
-      }
-    </script>
-
   </body>
 </html>
