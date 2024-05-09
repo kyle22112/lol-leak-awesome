@@ -35,12 +35,11 @@ h1 {
 }
 
 .image-link {
-  display: inline-block; /* Ensure the link takes up the entire space of the image */
+  display: block;
   text-decoration: none;
 }
 
 .image-container img {
   max-width: 100%; /* Ensure images don't exceed their container width */
   height: auto; /* Maintain aspect ratio */
-  display: block;
 }
