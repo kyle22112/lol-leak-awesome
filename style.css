@@ -23,3 +23,22 @@ h1 {
     display: flex;
     align-items: center;
 }
+
+.image-row {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent images from wrapping to the next line */
+}
+
+.image-container {
+  margin-right: 10px; /* Adjust the space between images */
+}
+
+.image-link {
+  display: inline-block; /* Ensure the link takes up the entire space of the image */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto; /* Maintain aspect ratio */
+}
